@@ -5,7 +5,7 @@
 <html>
 
 <head>
-	<title>Web Tak Jelas</title>
+	<title>List Employee</title>
 	
 	<link rel="shortcut icon" type="image" href="${pageContext.request.contextPath}/resources/css/ghozali.png">
 	
@@ -21,7 +21,7 @@
 
 	<div id="wrapper">
 		<div id="header">
-			<h2>Coba Coba ya guys</h2>
+			<h2>Employee Management Tracker</h2>
 		</div>
 	</div>
 	
@@ -39,8 +39,8 @@
 			
 			<table>
 				<tr>
-					<th>Nama Depan</th>
-					<th>Nama Belakang</th>
+					<th>First Name</th>
+					<th>Last Name</th>
 					<th>Email</th>
 					<th>Action</th>
 				</tr>
@@ -65,7 +65,7 @@
 							<a href="${updateLink}">Update</a> 
 							|
 							<a href="${deleteLink}"
-								onclick="if (!(confirm('Yakin data iki arep diapus?'))) return false">Apus</a>
+								onclick="if (!(confirm('Are you sure want to delete this data ?'))) return false">Delete</a>
 						</td>
 					</tr>
 				</c:forEach>

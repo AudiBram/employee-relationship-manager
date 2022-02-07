@@ -4,7 +4,7 @@
 <html>
 
 <head>
-	<title>Nyimpen Data</title>
+	<title>Save Data</title>
 	
 	<link rel="shortcut icon" type="image" href="${pageContext.request.contextPath}/resources/css/twitter.png">
 	
@@ -22,12 +22,12 @@
 
 	<div id="wrapper">
 		<div id="header">
-			<h2>Cilok Edy sek enak rek?</h2>
+			<h2>Employee Management Tracker</h2>
 		</div>
 	</div>
 	
 	<div id="container">
-		<h3>simpen data disini, pake data palsu ya guys!</h3>
+		<h3>Save Data Below</h3>
 		
 		<form:form action="saveEmployee" modelAttribute="employee" method="POST">
 		
@@ -37,12 +37,12 @@
 			<table>
 				<tbody>
 					<tr>
-						<td><label>Nama Depan:</label></td>
+						<td><label>First Name:</label></td>
 						<td><form:input path="firstName" /></td>
 					</tr>
 					
 					<tr>
-						<td><label>Nama Belakang:</label></td>
+						<td><label>Last Name:</label></td>
 						<td><form:input path="lastName" /></td>
 					</tr>
 					
@@ -53,7 +53,7 @@
 					
 					<tr>
 						<td><label></label></td>
-						<td><input type="submit" value="Simpan" class="save" /></td>
+						<td><input type="submit" value="Save" class="save" /></td>
 					</tr>
 			
 				</tbody>
